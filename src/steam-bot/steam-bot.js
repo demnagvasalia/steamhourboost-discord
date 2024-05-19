@@ -363,7 +363,11 @@ class SteamBot {
           this.replyDiscord(`Successfully logged on as \`${this.steamUser.steamID.getSteamID64()}\`!`);
 
           // Start playing games
-          this.steamUser.gamesPlayed(shuffleArray(this.getGames()));
+          this.getGames().forEach(gameId => {
+            this.steamUser.requestFreeLicense(gameId);
+          });
+          this.steamUser.gamesPlayed(this.getGames());
+
           this.replyDiscord(`Started playing \`${JSON.stringify(this.getGames())}\`!`);
 
           this.setStatus(STEAM_BOT_STATUS.BOOST_STARTED);
