@@ -57,7 +57,9 @@ module.exports = {
             }
 
             const appIds = games.split(',');
-            const numberOfGames = appIds.length;
+
+            /*
+             const numberOfGames = appIds.length;
 
             // Limit number of games based on license type
             const license = await LicenseCode.getCodeById(user.licenseCodeId);
@@ -66,6 +68,7 @@ module.exports = {
               await interaction.editReply(`You can only add up to ${license.licenseType.maxSteamGames} games per Steam account!`);
               return;
             }
+            */
 
             // Check for duplicate app id
             const uniqueAppIds = [...new Set(appIds)];
