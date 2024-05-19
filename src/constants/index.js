@@ -35,8 +35,8 @@ const LICENSE_TYPE = {
   PREMIUM: {
     id: 'L002',
     name: 'Premium',
-    maxSteamAccounts: 100,
-    maxSteamGames: 32,
+    maxSteamAccounts: 10,
+    maxSteamGames: 33,
   },
 };
 
