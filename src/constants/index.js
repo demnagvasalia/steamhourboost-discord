@@ -30,13 +30,13 @@ const LICENSE_TYPE = {
     id: 'L001',
     name: 'Free',
     maxSteamAccounts: 1,
-    maxSteamGames: 1,
+    maxSteamGames: 3,
   },
   PREMIUM: {
     id: 'L002',
     name: 'Premium',
     maxSteamAccounts: 100,
-    maxSteamGames: 30,
+    maxSteamGames: 32,
   },
 };
 
